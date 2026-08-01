@@ -1,20 +1,16 @@
-Yes. A GitHub README in this style looks professional and is easy to understand. Here's a polished version for your project.
-
----
-
 # 🚗 Automotive Parameter Monitoring System Using CAN Protocol
 
 ## 📌 Project Overview
 
-This project demonstrates an **Automotive Parameter Monitoring System** using the **Controller Area Network (CAN) protocol** on the **LPC2129 ARM7 Microcontroller**. It simulates a distributed automotive network where multiple Electronic Control Units (ECUs) communicate over a common CAN bus instead of dedicated point-to-point wiring.
+Modern vehicles rely on multiple Electronic Control Units (ECUs) to manage different functions efficiently. Instead of using separate wiring between every controller, these ECUs exchange information through a Controller Area Network (CAN), which reduces wiring complexity and enables reliable real-time communication.
 
-The system consists of **three independent CAN nodes**, each responsible for a specific automotive function.
+This project implements a simplified automotive CAN network using three LPC2129-based nodes, each responsible for a specific function:
 
-* 🚘 **Main Node** – Monitors engine temperature, receives fuel level data, displays vehicle parameters on the LCD, and transmits indicator commands.
-* ⛽ **Fuel Node** – Measures fuel level using the ADC and continuously transmits the fuel percentage.
-* 💡 **Indicator Node** – Receives indicator commands over CAN and controls LED scrolling patterns for left and right turn indicators.
+🚘 Main Node – Acts as the central controller by monitoring engine temperature, receiving fuel level information, displaying system status on a 20×4 LCD, and transmitting indicator commands.
+⛽ Fuel Node – Measures the fuel level through the ADC module, converts the analog signal into digital data, and periodically sends the fuel percentage to the Main Node.
+💡 Indicator Node – Receives CAN messages from the Main Node and controls LED scrolling patterns to simulate left and right turn indicators.
 
-Communication between all nodes is achieved using the **on-chip CAN controller of LPC2129** and the **MCP2551 CAN transceiver**, providing reliable real-time data exchange similar to modern automotive systems.
+Communication between all three nodes is achieved using the built-in CAN controller of the LPC2129 microcontroller together with the MCP2551 CAN transceiver, providing dependable multi-node communication similar to that used in real automotive embedded systems.
 
 ---
 
