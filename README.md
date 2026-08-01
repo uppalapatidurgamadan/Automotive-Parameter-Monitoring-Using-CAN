@@ -261,48 +261,7 @@ Repeat
 
 ---
 
-# 📁 Project Structure
 
-```text
-Automotive-Parameter-Monitoring-Using-CAN/
-│
-├── Main_Node/
-│   ├── main.c
-│   ├── can.c
-│   ├── lcd.c
-│   ├── ds18b20.c
-│   ├── interrupt.c
-│   ├── can.h
-│   ├── lcd.h
-│   └── ds18b20.h
-│
-├── Fuel_Node/
-│   ├── main.c
-│   ├── adc.c
-│   ├── can.c
-│   ├── adc.h
-│   └── can.h
-│
-├── Indicator_Node/
-│   ├── main.c
-│   ├── led.c
-│   ├── can.c
-│   ├── led.h
-│   └── can.h
-│
-├── Circuit_Diagram/
-│
-├── Images/
-│   ├── Hardware_Setup.jpg
-│   ├── Main_Node_Output.jpg
-│   ├── Fuel_Node_Output.jpg
-│   └── Indicator_Output.jpg
-│
-├── README.md
-└── LICENSE
-```
-
----
 
 # 📺 Output
 
