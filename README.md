@@ -6,9 +6,9 @@ Modern vehicles rely on multiple Electronic Control Units (ECUs) to manage diffe
 
 This project implements a simplified automotive CAN network using three LPC2129-based nodes, each responsible for a specific function:
 
-🚘 Main Node – Acts as the central controller by monitoring engine temperature, receiving fuel level information, displaying system status on a 20×4 LCD, and transmitting indicator commands.
-⛽ Fuel Node – Measures the fuel level through the ADC module, converts the analog signal into digital data, and periodically sends the fuel percentage to the Main Node.
-💡 Indicator Node – Receives CAN messages from the Main Node and controls LED scrolling patterns to simulate left and right turn indicators.
+Main Node – Acts as the central controller by monitoring engine temperature, receiving fuel level information, displaying system status on a 20×4 LCD, and transmitting indicator commands.
+Fuel Node – Measures the fuel level through the ADC module, converts the analog signal into digital data, and periodically sends the fuel percentage to the Main Node.
+Indicator Node – Receives CAN messages from the Main Node and controls LED scrolling patterns to simulate left and right turn indicators.
 
 Communication between all three nodes is achieved using the built-in CAN controller of the LPC2129 microcontroller together with the MCP2551 CAN transceiver, providing dependable multi-node communication similar to that used in real automotive embedded systems.
 
