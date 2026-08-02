@@ -199,7 +199,7 @@ Automotive-CAN-Bus-System/ \
 | Right Switch | LEDs scroll Left → Right                 |
 | CAN Bus      | Reliable communication between all nodes |
 <img width="1080" height="908" alt="WhatsApp Image 2026-08-02 at 2 19 11 PM" src="https://github.com/user-attachments/assets/d14242b9-a901-4f84-b664-74894596ed7e" />
-
+<!-- Failed to upload "WhatsApp Video 2026-08-02 at 6.23.07 PM.mp4" -->
 ---
 
 # 🔮 Future Enhancements
