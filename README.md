@@ -10,7 +10,7 @@ Main Node – Controls the overall system, monitors temperature, receives fuel l
 Fuel Node – Reads fuel level using ADC and transmits fuel information. 
 Indicator Node – Receives turn indicator commands and displays LED scrolling patterns.
 
-Communication between all three nodes is achieved using the built-in CAN controller of the LPC2129 microcontroller together with the MCP2551 CAN transceiver, providing dependable multi-node communication similar to that used in real automotive embedded systems.
+All nodes communicate through the CAN protocol using the on-chip CAN controller of LPC2129 and the MCP2551 CAN transceiver.
 
 ---
 
