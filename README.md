@@ -161,30 +161,30 @@ All nodes communicate through the CAN protocol using the on-chip CAN controller 
 
 📁Project Folder Structure
 
-Automotive-CAN-Bus-System/
+Automotive-CAN-Bus-System/ \
 │
-├── Main_Node/
-│ ├── main.c
-│ ├── can.c
-│ ├── lcd.c
-│ ├── ds18b20.c
-│ ├── interrupt.c
-│ └── include/
+├── Main_Node/\
+│ ├── main.c\
+│ ├── can.c\
+│ ├── lcd.c\
+│ ├── ds18b20.c\
+│ ├── interrupt.c\
+│ └── include/\
+│\
+├── Fuel_Node/\
+│ ├── main.c\
+│ ├── adc.c\
+│ ├── can.c\
+│ └── include /\
+│\
+├── Indicator_Node/\
+│ ├── main.c\
+│ ├── led.c\
+│ ├── can.c\
+│ └── include /\
 │
-├── Fuel_Node/
-│ ├── main.c
-│ ├── adc.c
-│ ├── can.c
-│ └── include /
-│
-├── Indicator_Node/
-│ ├── main.c
-│ ├── led.c
-│ ├── can.c
-│ └── include /
-│
-├── README.md
-└── LICENSE
+├── README.md\
+└── LICENSE\
 
 ---
 
