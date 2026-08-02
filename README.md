@@ -6,8 +6,8 @@ Modern vehicles rely on multiple Electronic Control Units (ECUs) to manage diffe
 
 Each node performs a dedicated task:
 
-Main Node – Controls the overall system, monitors temperature, receives fuel level data, and controls vehicle indicators. 
-Fuel Node – Reads fuel level using ADC and transmits fuel information. 
+Main Node – Controls the overall system, monitors temperature, receives fuel level data, and controls vehicle indicators.\
+Fuel Node – Reads fuel level using ADC and transmits fuel information.\
 Indicator Node – Receives turn indicator commands and displays LED scrolling patterns.
 
 All nodes communicate through the CAN protocol using the on-chip CAN controller of LPC2129 and the MCP2551 CAN transceiver.
