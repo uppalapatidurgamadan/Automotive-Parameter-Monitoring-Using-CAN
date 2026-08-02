@@ -22,10 +22,9 @@ All nodes communicate through the CAN protocol using the on-chip CAN controller 
 | 🔄 Multi-node Communication | Implement three-node CAN network              |
 | 🌡 Temperature Monitoring   | Measure engine temperature using DS18B20      |
 | ⛽ Fuel Monitoring           | Measure fuel level using ADC                  |
-| 💡 Indicator Control        | Control turn indicators through CAN           |
+| 💡 Indicator Control        | Control left/right indicators through CAN       |
 | 📺 Dashboard Display        | Display vehicle parameters on 20×4 LCD        |
-| ⚡ Real-time Communication   | Exchange data between nodes in real time      |
-| 🧩 Embedded System Design   | Develop a distributed automotive architecture |
+| 🔌 Distributed System       | Understand automotive embedded architecture      |
 
 ---
 
@@ -53,9 +52,9 @@ All nodes communicate through the CAN protocol using the on-chip CAN controller 
 | Keil µVision 4     | Embedded C Development |
 | Embedded C         | Programming Language   |
 | Flash Magic        | Program Download       |
-| Proteus (Optional) | Circuit Simulation     |
 
 > **Note:** The CAN bus is terminated with **120Ω resistors at both ends** to eliminate signal reflections and ensure reliable communication.
+![Uploading image.png…]()
 
 ---
 
