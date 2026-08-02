@@ -4,7 +4,7 @@
 
 Modern vehicles rely on multiple Electronic Control Units (ECUs) to manage different functions efficiently. Instead of using separate wiring between every controller, these ECUs exchange information through a Controller Area Network (CAN), which reduces wiring complexity and enables reliable real-time communication.
 
-This project implements a simplified automotive CAN network using three LPC2129-based nodes, each responsible for a specific function:
+Each node performs a dedicated task:
 
 Main Node – Controls the overall system, monitors temperature, receives fuel level data, and controls vehicle indicators. 
 Fuel Node – Reads fuel level using ADC and transmits fuel information. 
