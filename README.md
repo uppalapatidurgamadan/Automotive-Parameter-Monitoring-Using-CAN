@@ -74,27 +74,7 @@ All nodes communicate through the CAN protocol using the on-chip CAN controller 
 
 ### Main Node Workflow
 
-```text
-Start
-   │
-Initialize LCD
-   │
-Initialize CAN
-   │
-Initialize DS18B20
-   │
-Read Temperature
-   │
-Receive Fuel Data
-   │
-Display Temperature & Fuel
-   │
-Read Indicator Switches
-   │
-Transmit Indicator Command
-   │
-Repeat
-```
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/a9274bb6-a219-4c27-bca2-20708e70b20d" />
 
 ---
 
@@ -106,29 +86,12 @@ Repeat
 | ----------------- | ----------------------------------------- |
 | Fuel Measurement  | Reads fuel sensor                         |
 | ADC Conversion    | Converts analog signal into digital value |
-| Fuel Calculation  | Calculates fuel percentage                |
 | CAN Transmission  | Sends fuel level to Main Node             |
-| Continuous Update | Periodically transmits data               |
+| Periodic Update   | Continuously updates Main Node            |
 
 ### Fuel Node Workflow
 
-```text
-Start
-   │
-Initialize ADC
-   │
-Initialize CAN
-   │
-Read Fuel Sensor
-   │
-Convert ADC Value
-   │
-Calculate Fuel %
-   │
-Transmit Fuel Data
-   │
-Repeat
-```
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/f14a127c-ea27-457c-9ba1-6de48b4c3cde" />
 
 ---
 
@@ -145,44 +108,13 @@ Repeat
 
 ### Indicator Node Workflow
 
-```text
-Start
-   │
-Initialize CAN
-   │
-Wait for CAN Message
-   │
-Receive Indicator Command
-   │
-Drive LEDs
-   │
-Repeat
-```
+<img width="1122" height="1402" alt="image" src="https://github.com/user-attachments/assets/46bb8087-c85c-4232-95aa-b39dcfc2ac81" />
+
 
 ---
 
 # 🔌 Hardware Connections
-
-## Main Node
-
-* LPC2129
-* MCP2551 CAN Transceiver
-* DS18B20 Temperature Sensor
-* 20×4 LCD
-* Left & Right Push Buttons
-
-## Fuel Node
-
-* LPC2129
-* MCP2551
-* Potentiometer (Fuel Sensor)
-* ADC Channel
-
-## Indicator Node
-
-* LPC2129
-* MCP2551
-* 8 LEDs
+<img width="1280" height="960" alt="WhatsApp Image 2026-08-02 at 2 12 11 PM" src="https://github.com/user-attachments/assets/0b3bbd79-0f88-49a2-9fd0-3b62287e1177" />
 
 ---
 
@@ -190,14 +122,14 @@ Repeat
 
 | Feature                     | Description                         |
 | --------------------------- | ----------------------------------- |
-| Multi-node CAN Architecture | Three independent ECUs              |
-| Real-time Monitoring        | Live vehicle data                   |
-| Fuel Level Monitoring       | ADC-based measurement               |
-| Temperature Monitoring      | DS18B20 sensor                      |
-| Indicator Control           | CAN-controlled LED indicators       |
-| Distributed Processing      | Multiple controllers                |
+| Multi-node CAN Architecture | Three independent controller        |
+| Real-time Monitoring        | Live vehicle parameter display      |
+| Fuel Level Monitoring       | ADC-based                           |
+| Temperature Monitoring      | DS18B20 based                       |
+| Indicator Control           | CAN-controlled                      |
+| Distributed Processing      | Multiple ECUs                       |
 | Modular Design              | Easy to expand                      |
-| Reliable Communication      | CAN error detection and arbitration |
+| Reliable Communication      | CAN error detection                 |
 
 ---
 
@@ -208,8 +140,8 @@ Repeat
 | High Reliability        | Robust CAN communication            |
 | Reduced Wiring          | Single shared CAN bus               |
 | Fault Tolerance         | Built-in CAN error detection        |
-| Real-time Communication | Fast message transfer               |
-| Scalable Design         | Easy to add more ECUs               |
+| Real-time Communication | Fast Data transfer                  |
+| Scalable Design         | Easy to add new ECUs                |
 | Priority Arbitration    | Critical messages transmitted first |
 
 ---
@@ -227,7 +159,34 @@ Repeat
 
 ---
 
+📁Project Folder Structure
 
+Automotive-CAN-Bus-System/
+│
+├── Main_Node/
+│ ├── main.c
+│ ├── can.c
+│ ├── lcd.c
+│ ├── ds18b20.c
+│ ├── interrupt.c
+│ └── include/
+│
+├── Fuel_Node/
+│ ├── main.c
+│ ├── adc.c
+│ ├── can.c
+│ └── include /
+│
+├── Indicator_Node/
+│ ├── main.c
+│ ├── led.c
+│ ├── can.c
+│ └── include /
+│
+├── README.md
+└── LICENSE
+
+---
 
 # 📺 Output
 
@@ -239,30 +198,7 @@ Repeat
 | Left Switch  | LEDs scroll Right → Left                 |
 | Right Switch | LEDs scroll Left → Right                 |
 | CAN Bus      | Reliable communication between all nodes |
-
----
-
-# 📷 Project Images
-
-Add your images in the `Images/` folder and reference them like this:
-
-```markdown
-## Hardware Setup
-
-![Hardware Setup](Images/Hardware_Setup.jpg)
-
-## Main Node
-
-![Main Node](Images/Main_Node_Output.jpg)
-
-## Fuel Node
-
-![Fuel Node](Images/Fuel_Node_Output.jpg)
-
-## Indicator Node
-
-![Indicator Node](Images/Indicator_Output.jpg)
-```
+<img width="1080" height="908" alt="WhatsApp Image 2026-08-02 at 2 19 11 PM" src="https://github.com/user-attachments/assets/d14242b9-a901-4f84-b664-74894596ed7e" />
 
 ---
 
@@ -283,12 +219,7 @@ Add your images in the `Images/` folder and reference them like this:
 
 **Uppalapati Durga Madan**
 
-* 🎓 B.Tech – Electronics & Communication Engineering
-* 💻 Embedded Systems Engineer
-* 🔧 Skills: Embedded C, ARM7, CAN, UART, SPI, I²C, RTOS, LPC2129
-* 🌐 GitHub: `https://github.com/your-username` *(replace with your profile link)*
-* 💼 LinkedIn: *(add your LinkedIn profile link)*
+* 💼 LinkedIn: *(https://linkedin.com/in/uppalapati-durga-madan-7324a132a)*
 
 ---
 
-This README follows GitHub best practices, is ATS-friendly, and presents your embedded project in a professional format suitable for recruiters and interviewers.
