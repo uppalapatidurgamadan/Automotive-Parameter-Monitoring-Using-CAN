@@ -54,39 +54,10 @@ All nodes communicate through the CAN protocol using the on-chip CAN controller 
 | Flash Magic        | Program Download       |
 
 > **Note:** The CAN bus is terminated with **120Ω resistors at both ends** to eliminate signal reflections and ensure reliable communication.
-![Uploading image.png…]()
 
 ---
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/b204a19a-0f67-44a1-b00c-bcd4e0a4d184" />
 
-# 🏗 System Architecture
-
-```text
-                    CAN BUS
--------------------------------------------------------
-
-        +--------------------+
-        |    Main Node       |
-        |--------------------|
-        | LPC2129            |
-        | LCD                |
-        | DS18B20            |
-        | Push Buttons       |
-        +---------+----------+
-                  |
-                  |
-      -----------------------------
-      |                           |
-      |                           |
-+-----+------+             +------+------+
-| Fuel Node  |             | Indicator   |
-|-------------|            | Node        |
-| LPC2129     |            | LPC2129     |
-| ADC         |            | LEDs        |
-| Fuel Sensor |            |             |
-+-------------+            +-------------+
-```
-
----
 
 # 🚘 Main Node
 
